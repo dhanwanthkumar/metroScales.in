@@ -4,9 +4,6 @@ body {
     padding: 0;
 }
 
-.logo img {
-    width: 70px;
-}
 
 header {
     background-color: #fff;
@@ -18,7 +15,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1px 2px;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 35px 5px 0px;
     margin-bottom: 2px;
 }
 
@@ -51,7 +48,7 @@ nav {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 5px;
+    gap: 13px;
     justify-content: flex-start;
 }
 
@@ -67,13 +64,16 @@ nav {
     font-weight: bold;
     display: block;
 }
+.nav-categories li span {
+    margin-top: 2px;
+}
 
 .nav-categories li img {
     border-radius: 50%;
     width: 80px;
     display: block;
     margin: 0 auto 5px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 54px 55px, rgba(0, 0, 0, 0.15) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .banner,
@@ -109,4 +109,46 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+.hero {
+    position: relative;
+    text-align: left;
+    color: white;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero img {
+    max-width: 50%;
+    height: auto;
+}
+
+.hero-content {
+    max-width: 50%;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    margin: 0 0 20px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.hero-content p {
+    margin: 0 0 20px;
+    font-size: 1.2em;
+}
+
+.cta-button {
+    background-color: #ff9900;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
 }
