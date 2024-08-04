@@ -3,19 +3,23 @@ body {
     margin: 0;
     padding: 0;
 }
-.logo img{
-    width: 100px;
+
+.logo img {
+    width: 70px;
 }
+
 header {
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .top-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 1px 2px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    margin-bottom: 2px;
 }
 
 .top-bar h1 {
@@ -47,7 +51,7 @@ nav {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 20px;
+    gap: 5px;
     justify-content: flex-start;
 }
 
@@ -66,19 +70,20 @@ nav {
 
 .nav-categories li img {
     border-radius: 50%;
-    border: 2px solid #167c23;
     width: 60px;
     height: 60px;
     display: block;
     margin: 0 auto 5px;
 }
 
-.banner, .promotion {
+.banner,
+.promotion {
     text-align: center;
     margin: 20px 0;
 }
 
-.banner img, .promotion img {
+.banner img,
+.promotion img {
     max-width: 100%;
     height: auto;
 }
