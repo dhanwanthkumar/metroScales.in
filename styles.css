@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.logo img{
+    width: 100px;
+}
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.top-bar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.cart-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #f8f8f8;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+.nav-categories {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.nav-categories li {
+    display: inline-block;
+    text-align: center;
+    font-size: small;
+}
+
+.nav-categories li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    display: block;
+}
+
+.nav-categories li img {
+    border-radius: 50%;
+    border: 2px solid #167c23;
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.banner, .promotion {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.banner img, .promotion img {
+    max-width: 100%;
+    height: auto;
+}
+
+.discount-codes {
+    text-align: center;
+    background-color: #fff7e6;
+    padding: 20px;
+}
+
+.discount-codes .code {
+    display: inline-block;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
