@@ -3,7 +3,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
     padding: 5px;
     position: relative;
 }
@@ -16,16 +15,17 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('media/bg.gif'); /* Path to your image */
+    background-image: url('/media/gif/bg.gif'); /* Path to your image */
     background-size: cover;
     background-position: center;
-    filter: blur(5px); /* Adjust the blur level */
+    filter: blur(3px); /* Adjust the blur level */
     z-index: -1; /* Place the background behind the content */
     opacity: 0.5; /* Adjust opacity if needed */
 }
 
 /* Style the cards */
 .card {
+    margin: 10px;
     background-color: #ffffff86; /* Use a solid color or a transparent color */
     border-radius: 10px;
     max-width: 180px;
