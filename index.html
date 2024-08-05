@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/container.css">
     <link rel="stylesheet" href="css/slideshow.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="css/popup.css">
 </head>
 
 <body>
@@ -18,14 +20,14 @@
             <img src="media/icons/favicon.png" alt="Metro_Scales">
         </div>
         <div class="icons">
-            <button class="cart-btn">&#128722;</button>
+            <a href="cart.html"><button class="cart-btn">&#128722;</button></a>
         </div>
     </div>
     <nav>
         <ul class="nav-categories">
             <li><a href="index.html"><img src="media/tmp/2.png" alt="Weighing scale"><span>Metro
                     </span></a></li>
-            <li><a href="weighing.html"><img src="media/tmp/6.png" alt="Weighing scale"><span>Weighing
+            <li><a href="/weighing/weighing.html"><img src="media/tmp/6.png" alt="Weighing scale"><span>Weighing
                     </span></a></li>
             <li><a href="billing.html"><img src="media/tmp/4.png" alt="Billing machine"><span>Billing</span></a></li>
             <li><a href="counting.html"><img src="media/tmp/3.png" alt="Cash counting"><span>counting</span></a>
@@ -48,39 +50,48 @@
     <div class="heading-banner">
         <img src="media/home/whats_trending.png " alt="">
     </div>
+
+    <!-- container below whats trending in-->
+    
     <div class="container">
-        <div class="card">
-            <img src="media/home/bagcloser1.jpg" alt="Scale Image">
+        <div class="product" data-id="1001" data-name="bag closer" data-price="2100">
+            <img src="media/home/bagcloser1.jpg" alt="bag closer">
             <div class="content">
                 <h3>Bag Closer Machine</h3>
                 <h2>MULTIPURPOSE SCALES</h2>
-                <button>Shop Now</button>
+                <button class="add-to-cart">Shop Now</button>
             </div>
         </div>
-        <div class="card">
+        <div class="product" data-id="2001" data-name="Money counting Machine" data-price="8120">
             <img src="media/home/money1.jpg" alt="Scale Image">
             <div class="content">
                 <h3>Money counting Machine</h3>
                 <h2>MULTIPURPOSE SCALES</h2>
-                <button>Shop Now</button>
+                <button class="add-to-cart">Shop Now</button>
             </div>
         </div>
-        <div class="card">
+        <div class="product" data-id="3001" data-name="Billing Machine" data-price="2040">
             <img src="media/home/billing1.jpg" alt="Scale Image">
             <div class="content">
-                <h3>Billing Machinel</h3>
+                <h3>Billing Machine</h3>
                 <h2>MULTIPURPOSE SCALES</h2>
-                <button>Shop Now</button>
+                <button class="add-to-cart">Shop Now</button>
             </div>
         </div>
-        <div class="card">
+        <div class="product" data-id="4001" data-name="Sealing Machine" data-price="1520">
             <img src="media/home/sealing1.jpg" alt="Scale Image">
             <div class="content">
-                <h3>Selaing Machine</h3>
+                <h3>Sealing Machine</h3>
                 <h2>MULTIPURPOSE SCALES</h2>
-                <button>Shop Now</button>
+                <button class="add-to-cart">Shop Now</button>
             </div>
         </div>
+
+
+
+       
+
+
     </div>
     <div class="banner">
         <div class="guidelines">
@@ -197,6 +208,25 @@
     </div>
     </div>
 
+    <!-- pop up-->
+    <div class="popup-container" id="popup">
+        <div class="popup-box">
+            <div class="popup-header">
+                <span class="popup-icon">&#10003;</span>
+                <span class="popup-message" id="popup-message">Product successfully added to your cart!</span>
+                <span class="popup-close" onclick="closePopup()">×</span>
+            </div>
+            <div class="popup-content">
+                <img id="popup-image" src="" alt="Product Image">
+                <div class="popup-details">
+                    <span id="popup-product-name">Product Name</span>
+                    <span id="popup-product-price">$0.00</span>
+                    <span id="popup-shipping">Shipping: $0.00</span>
+                    <span id="popup-total">Cart total: $0.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -205,7 +235,7 @@
     <footer>
         <p>&copy; 2024 Metro Scales. All rights reserved.</p>
     </footer>
-
+    <script src="js/add-to-cart.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/slide.js"></script>
 </body>
