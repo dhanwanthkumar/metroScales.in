@@ -11,11 +11,23 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cart.html">Cart</a></li>
+        <nav class="navbar">
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="weighing.html" class="nav-link">weighing Machines</a></li>
+                <li class="nav-item"><a href="billing.html" class="nav-link">Billing Machines</a></li>
+                <li class="nav-item"><a href="counting.html" class="nav-link">Counting Machines</a></li>
+                <li class="nav-item"><a href="sealing.html" class="nav-link">Sealing Machines</a></li>
+                <li class="nav-item"><a href="closer.html" class="nav-link">Closer Machines</a></li>
             </ul>
+            <div class="icons">
+                <a href="cart.html"><button class="cart-btn">&#128722;</button></a>
+            </div>
         </nav>
     </header>
     <main>
@@ -37,6 +49,7 @@
         <p>&copy; 2024 MyStore. All rights reserved.</p>
     </footer>
     <script src="js/cart.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 
 </html>
