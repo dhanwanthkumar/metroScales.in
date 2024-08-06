@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.guidelines{
+    margin: 0px;
+}
+.welcome{
+    background: #f44336;
+    margin: 0%;
+    padding: 0px;
+    text-align: center;
+    box-shadow: rgba(6, 101, 13, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    margin-bottom: 10px;
+}
+.welcome b {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: small;
+}
+
+.heading-banner img{
+    width:100%;
+}
+.top-bar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 2px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 35px 5px 0px;
+    margin-bottom: 2px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.top-bar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.cart-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #f8f8f8;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+.nav-categories {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 13px;
+    justify-content: flex-start;
+}
+
+.nav-categories li {
+    display: inline-block;
+    text-align: center;
+    font-size: small;
+}
+
+.nav-categories li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    display: block;
+}
+.nav-categories li span {
+    margin-top: 2px;
+}
+
+.nav-categories li img {
+    border-radius: 50%;
+    width: 80px;
+    display: block;
+    margin: 0 auto 5px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 54px 55px, rgba(0, 0, 0, 0.15) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.banner{
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.banner img,
+.promotion img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+footer {
+    background-color: #333;
+    color: #ed1414;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer p{
+    margin: 0px;
+    font-size: smaller;
+    color:#fff;
+}

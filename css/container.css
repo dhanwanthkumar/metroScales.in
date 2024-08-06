@@ -1,0 +1,31 @@
+/* Make sure the container is positioned relative for the pseudo-element */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+}
+
+/* Create the blurred background image using the ::before pseudo-element */
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/media/gif/bg.gif'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px); /* Adjust the blur level */
+    z-index: -1; /* Place the background behind the content */
+    opacity: 0.5; /* Adjust opacity if needed */
+}
+
+/* Style the cards */
+
+
+button:hover {
+    background-color: #d32f2f;
+}
