@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Sorry, something went wrong. Please try again later.";
     }
 } else {
-    header("Location: index.html"); // Redirect back to the form if accessed directly
+    header("Location: /index.html"); // Redirect back to the form if accessed directly
     exit();
 }
 ?>

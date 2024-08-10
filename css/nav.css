@@ -4,7 +4,7 @@ body {
 }
 
 .navbar {
-    background-color: #c1fde3;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,8 +44,8 @@ body {
 }
 
 .nav-link:hover {
-    color: #FFFFFF;
-    background-color: #c1fde3;
+    color: black;
+    font-size: large;
 }
 
 .icons {
@@ -67,7 +67,7 @@ body {
         position: absolute;
         top: 40px;
         left: 0px;
-        background-color:rgb(193, 253, 227,0.8);
+        background-color:rgba(255, 255, 255, 0.8);
         width: 100%;
     }
 

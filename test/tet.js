@@ -1,22 +1,25 @@
-
-
-const boxes = document.querySelectorAll(".box");
-
-window.addEventListener("scroll", checkBoxes);
-
-checkBoxes();
-
-function checkBoxes() {
-  const triggerBottom = (window.innerHeight / 5) * 4;
-
-  boxes.forEach((box) => {
-    const boxTop = box.getBoundingClientRect().top;
-
-    if (boxTop < triggerBottom) {
-      box.classList.add("show");
-    } else {
-      box.classList.remove("show");
-    }
+$(document).ready(function(){
+  $('.product-slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: true,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   });
-}
-
+});
