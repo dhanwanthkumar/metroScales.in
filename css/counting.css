@@ -55,7 +55,7 @@ button {
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
-    background: #000;
+    background: #00000000;
     position: relative;
 }
 

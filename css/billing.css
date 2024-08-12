@@ -82,17 +82,12 @@ body {
 /* Style the headings and button */
 h3 {
     font-size: 14px;
-    color: #333;
-    margin: 0;
-}
-
-h2 {
-    font-size: 16px;
     color: #000;
-    margin: 10px 0;
+    margin: 5px;
 }
 
 .product .price {
+    margin-top: 5px;
     font-size: 12px;
     color: #333;
 }
@@ -108,14 +103,14 @@ h2 {
 }
 
 button {
-    background-color: #f44336;
-    color: white;
+    background-color: #333;
+    color: #fff;
     border: none;
-    padding: 10px 20px;
-    margin-bottom: 5px;
-    border-radius: 20px;
+    padding: 10px 15px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
 .grid-head {
