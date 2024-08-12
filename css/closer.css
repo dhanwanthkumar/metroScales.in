@@ -8,9 +8,10 @@
     position: relative;
 }
 
-video {
+.video-container img {
     min-width: 100%;
     min-height: 100%;
+    border-radius: 5px;
 }
 
 /* product */
