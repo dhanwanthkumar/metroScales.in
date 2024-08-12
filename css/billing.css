@@ -14,32 +14,11 @@ body {
 
 }
 
-video {
+.video-container img {
     min-width: 100%;
     min-height: 100%;
     border-radius: 5px;
 }
-
-#myVideo::-webkit-media-controls {
-    display: none !important;
-}
-
-#myVideo::-moz-media-controls {
-    display: none !important;
-}
-
-#myVideo::-ms-media-controls {
-    display: none !important;
-}
-
-#myVideo::-o-media-controls {
-    display: none !important;
-}
-
-#myVideo::media-controls {
-    display: none !important;
-}
-
 
 
 /* grid big small*/
