@@ -1,10 +1,17 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bag Closer</title>
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/closer.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="js/add-to-cart.js"></script>
+    <script src="js/nav.js"></script>
 </head>
+
 <body>
     <nav class="navbar">
         <div class="menu-icon" id="menu-icon">
@@ -25,8 +32,123 @@
         </div>
     </nav>
 
-    
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="media/vedio/bag closer hero.mp4" type="video/mp4">
+        </video>
+    </div>
 
-    <script src="js/nav.js"></script>
+
+            <div class="product" data-id="1001" data-name="bag closer" data-price="2100">
+                <div class="product-img">
+                    <img src="media/home/bagcloser1.jpg" alt="bag closer">
+                </div>
+                <div class="content">
+                    <h2>Revo Bag Closer Machine</h2>
+                    <h3>Double Stitch</h3>
+                    <p class="price">₹24999 
+                        <span class="old-price">₹27999</span> 
+                        <span class="discount">11% OFF</span>
+                    </p>
+                    <button class="add-to-cart">Shop Now</button>
+                </div>
+            </div>
+            
+    <!-- about us -->
+    <div class="contact-page-container">
+        <!-- contact -->
+        <div class="contact-form-container">
+            <h2>Contact Us</h2>
+            <h1>Get In Touch</h1>
+            <div class="form-get">
+                <form action="/php/process_form.php" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name...">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@yourmail.com">
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Title...">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Type Here..." rows="5"></textarea>
+
+                    <button type="submit">Send Now</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="contact-info-container">
+            <p>To know more about us kindly ping us through mail and check out our social media frofiles by clicking the
+                icons below.</p>
+
+            <!-- Location -->
+
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.982578326782!2d78.69156018557601!3d10.812644861847993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf506b480a701%3A0x7a8264c7e6e48525!2s175%2C%20Quaide%20Millath%20Rd%2C%20Malligaipuram%20Thottam%2C%20Palakarai%2C%20Palakkarai%2C%20Tiruchirappalli%2C%20Tamil%20Nadu%20620008!5e0!3m2!1sen!2sin!4v1722775730574!5m2!1sen!2sin"
+                    width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"
+                    aria-hidden="false" tabindex="0">
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="contact-info">
+                <div class="info-item">
+                    <a href="tel:+9786007674"><img src="media/icons/phone.png" alt=""></a>
+
+                </div>
+                <div class="info-item">
+                    <a href="mailto:workgit9@gmail.com"><img src="media/icons/gmail.png" alt=""></a>
+
+                </div>
+                <div class="info-item">
+                    <a href="https://wa.me/7904812982"><img src="media/icons/whatsapp.png" alt=""></a>
+
+                </div>
+                <div class="info-item">
+                    <a
+                        href="https://www.facebook.com/MR.Fazeed?mibextid=LQQJ4d&rdid=SV2V0Dm7WnIqx6Ol&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FqvsFXuQUj3mLZbYk%2F%3Fmibextid%3DLQQJ4d"><img
+                            src="media/icons/facebook.png" alt=""></a>
+
+                </div>
+                <div class="info-item">
+                    <a href="https://www.instagram.com/metro_scales/"><img src="media/icons/instagram.png" alt=""></a>
+
+                </div>
+                <div class="info-item">
+                    <a href="https://www.youtube.com/@Newmetroscales"><img src="media/icons/youtube.png" alt=""></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- pop up-->
+    <div class="popup-container" id="popup">
+        <div class="popup-box">
+            <div class="popup-header">
+                <span class="popup-icon">&#10003;</span>
+                <span class="popup-message" id="popup-message">Product successfully added to your cart!</span>
+                <span class="popup-close" onclick="closePopup()">×</span>
+            </div>
+            <div class="popup-content">
+                <img id="popup-image" src="" alt="Product Image">
+                <div class="popup-details">
+                    <span id="popup-product-name">Product Name</span>
+                    <span id="popup-product-price">$0.00</span>
+                    <span id="popup-shipping">Shipping: $0.00</span>
+                    <span id="popup-total">Cart total: $0.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2024 Metro Scales. All rights reserved.</p>
+    </footer>
+
 </body>
+
 </html>

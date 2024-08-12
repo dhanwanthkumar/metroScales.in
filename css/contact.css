@@ -101,3 +101,16 @@
 .info-item img{
     width: 60px;
 }
+
+footer {
+    background-color: #333;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer p{
+    margin: 0px;
+    font-size: smaller;
+    color:#fff;
+}
