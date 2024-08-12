@@ -10,20 +10,11 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px;
     gap: 20px;
 }
 
-.popular-products {
-    flex: 1;
-    margin: 20px;
 
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
 
 .info-box {
 
@@ -50,36 +41,5 @@ body {
 .text p {
 
     margin: 5px 0 0;
-    font-size: 12px;
-}
-
-.popular-products h2 {
-    margin-left: 10px;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.product-card {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-   
-}
-
-.product-card img {
-    margin: 10px;
-    margin-top: 0px;
-    width: 100%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-
-.product-card p {
-    margin: 0px;
-    font-size: medium;
-    color: #000000;
+    font-size: 13px;
 }

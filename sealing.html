@@ -1,147 +1,113 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 400px;
-            padding: 20px;
-            border-radius: 20px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            background: #fff;
-            text-align: center;
-            position: relative;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        input {
-            width: 80%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        button {
-            width: 80%;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            background: #007BFF;
-            color: white;
-            cursor: pointer;
-            margin: 10px 0;
-        }
-
-        button:hover {
-            background: #0056b3;
-        }
-
-        .bg-image {
-            background: url('your-image.jpg') no-repeat center center/cover;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            border-radius: 20px;
-        }
-
-        .step-indicator {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            font-size: 18px;
-            color: #fff;
-        }
-
-        .social-login {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .social-login a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #007BFF;
-        }
-
-        .title {
-            font-size: 24px;
-            color: #fff;
-            margin-bottom: 20px;
-        }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/counting.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <script src="js/add-to-cart.js"></script>
 </head>
+
 <body>
-    <div class="container" id="start-page">
-        <div class="bg-image"></div>
-        <h1 class="title">FITNESS</h1>
-        <button onclick="showOTPPage()">Get Started</button>
-        <p>or <a href="#">Log in</a></p>
-    </div>
-    <div class="container hidden" id="otp-page">
-        <div class="bg-image"></div>
-        <div class="step-indicator">Step 1/3</div>
-        <h2>Enter Mobile Number</h2>
-        <input type="text" id="mobile-number" placeholder="Mobile Number">
-        <button onclick="generateOTP()">Generate OTP</button>
-        <div id="otp-section" class="hidden">
-            <h2>Enter OTP</h2>
-            <input type="text" id="otp" placeholder="OTP">
-            <button onclick="validateOTP()">Verify OTP</button>
+    <nav class="navbar">
+        <div class="menu-icon" id="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
-        <div class="social-login">
-            <a href="#">Facebook</a>
-            <a href="#">Google</a>
+        <ul class="nav-list" id="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="weighing.html" class="nav-link">weighing Machines</a></li>
+            <li class="nav-item"><a href="billing.html" class="nav-link">Billing Machines</a></li>
+            <li class="nav-item"><a href="counting.html" class="nav-link">Counting Machines</a></li>
+            <li class="nav-item"><a href="sealing.html" class="nav-link">Sealing Machines</a></li>
+            <li class="nav-item"><a href="closer.html" class="nav-link">Closer Machines</a></li>
+        </ul>
+        <div class="icons">
+            <a href="cart.html"><button class="cart-btn">&#128722;</button></a>
+        </div>
+    </nav>
+
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="media/vedio/sealing hero.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="grid-container">
+        <div class="product" data-id="1001" data-name="bag closer" data-price="2100">
+            <img src="media/home/bagcloser1.jpg" alt="bag closer">
+            <div class="content">
+                <h3>Bag Closer Machine</h3>
+                <h2>MULTIPURPOSE SCALES</h2>
+                <button class="add-to-cart">Shop Now</button>
+            </div>
+        </div>
+        <div class="product" data-id="1001" data-name="bag closer" data-price="2100">
+            <img src="media/home/bagcloser1.jpg" alt="bag closer">
+            <div class="content">
+                <h3>Bag Closer Machine</h3>
+                <h2>MULTIPURPOSE SCALES</h2>
+                <button class="add-to-cart">Shop Now</button>
+            </div>
+        </div>
+        <div class="product" data-id="1001" data-name="bag closer" data-price="2100">
+            <img src="media/home/bagcloser1.jpg" alt="bag closer">
+            <div class="content">
+                <h3>Bag Closer Machine</h3>
+                <h2>MULTIPURPOSE SCALES</h2>
+                <button class="add-to-cart">Shop Now</button>
+            </div>
+        </div>
+        <div class="product" data-id="1001" data-name="bag closer" data-price="2100">
+            <img src="media/home/bagcloser1.jpg" alt="bag closer">
+            <div class="content">
+                <h3>Bag Closer Machine</h3>
+                <h2>MULTIPURPOSE SCALES</h2>
+                <button class="add-to-cart">Shop Now</button>
+            </div>
+        </div>
+        <div class="product" data-id="1001" data-name="bag closer" data-price="2100">
+            <img src="media/home/bagcloser1.jpg" alt="bag closer">
+            <div class="content">
+                <h3>Bag Closer Machine</h3>
+                <h2>MULTIPURPOSE SCALES</h2>
+                <button class="add-to-cart">Shop Now</button>
+            </div>
+        </div>
+        <div class="product" data-id="1001" data-name="bag closer" data-price="2100">
+            <img src="media/home/bagcloser1.jpg" alt="bag closer">
+            <div class="content">
+                <h3>Bag Closer Machine</h3>
+                <h2>MULTIPURPOSE SCALES</h2>
+                <button class="add-to-cart">Shop Now</button>
+            </div>
         </div>
     </div>
 
-    <script>
-        function showOTPPage() {
-            document.getElementById('start-page').classList.add('hidden');
-            document.getElementById('otp-page').classList.remove('hidden');
-        }
+        <!-- pop up-->
+        <div class="popup-container" id="popup">
+            <div class="popup-box">
+                <div class="popup-header">
+                    <span class="popup-icon">&#10003;</span>
+                    <span class="popup-message" id="popup-message">Product successfully added to your cart!</span>
+                    <span class="popup-close" onclick="closePopup()">×</span>
+                </div>
+                <div class="popup-content">
+                    <img id="popup-image" src="" alt="Product Image">
+                    <div class="popup-details">
+                        <span id="popup-product-name">Product Name</span>
+                        <span id="popup-product-price">$0.00</span>
+                        <span id="popup-shipping">Shipping: $0.00</span>
+                        <span id="popup-total">Cart total: $0.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        function generateOTP() {
-            const mobileNumber = document.getElementById('mobile-number').value;
-            if (mobileNumber) {
-                // Simulating OTP generation and sending
-                alert('OTP sent to ' + mobileNumber);
-                document.getElementById('otp-section').classList.remove('hidden');
-            } else {
-                alert('Please enter a valid mobile number.');
-            }
-        }
-
-        function validateOTP() {
-            const otp = document.getElementById('otp').value;
-            // Simulate OTP validation
-            if (otp === '1234') { // Assume '1234' is the valid OTP for demonstration
-                alert('OTP verified successfully!');
-                window.location.href = 'index.html';
-            } else {
-                alert('Invalid OTP. Please try again.');
-            }
-        }
-    </script>
+    <script src="js/nav.js"></script>
 </body>
+
 </html>

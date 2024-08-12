@@ -1,10 +1,15 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/counting.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <script src="js/add-to-cart.js"></script>
 </head>
+
 <body>
     <nav class="navbar">
         <div class="menu-icon" id="menu-icon">
@@ -24,6 +29,69 @@
             <a href="cart.html"><button class="cart-btn">&#128722;</button></a>
         </div>
     </nav>
+
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="media/vedio/cash-counting hero.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="grid-container">
+        <div class="product" data-id="1001" data-name="bag closer" data-price="2100">
+            <img src="media/home/bagcloser1.jpg" alt="bag closer">
+            <div class="content">
+                <h3>Bag Closer Machine</h3>
+                <h2>MULTIPURPOSE SCALES</h2>
+                <button class="add-to-cart">Shop Now</button>
+            </div>
+        </div>
+        <div class="product" data-id="1001" data-name="bag closer" data-price="2100">
+            <img src="media/home/bagcloser1.jpg" alt="bag closer">
+            <div class="content">
+                <h3>Bag Closer Machine</h3>
+                <h2>MULTIPURPOSE SCALES</h2>
+                <button class="add-to-cart">Shop Now</button>
+            </div>
+        </div>
+        <div class="product" data-id="1001" data-name="bag closer" data-price="2100">
+            <img src="media/home/bagcloser1.jpg" alt="bag closer">
+            <div class="content">
+                <h3>Bag Closer Machine</h3>
+                <h2>MULTIPURPOSE SCALES</h2>
+                <button class="add-to-cart">Shop Now</button>
+            </div>
+        </div>
+        <div class="product" data-id="1001" data-name="bag closer" data-price="2100">
+            <img src="media/home/bagcloser1.jpg" alt="bag closer">
+            <div class="content">
+                <h3>Bag Closer Machine</h3>
+                <h2>MULTIPURPOSE SCALES</h2>
+                <button class="add-to-cart">Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+        <!-- pop up-->
+        <div class="popup-container" id="popup">
+            <div class="popup-box">
+                <div class="popup-header">
+                    <span class="popup-icon">&#10003;</span>
+                    <span class="popup-message" id="popup-message">Product successfully added to your cart!</span>
+                    <span class="popup-close" onclick="closePopup()">×</span>
+                </div>
+                <div class="popup-content">
+                    <img id="popup-image" src="" alt="Product Image">
+                    <div class="popup-details">
+                        <span id="popup-product-name">Product Name</span>
+                        <span id="popup-product-price">$0.00</span>
+                        <span id="popup-shipping">Shipping: $0.00</span>
+                        <span id="popup-total">Cart total: $0.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     <script src="js/nav.js"></script>
 </body>
+
 </html>
