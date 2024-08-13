@@ -1,4 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
+$(document).ready(function(){
+    $('.product-images-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
+
     document.querySelector('.buy-now').addEventListener('click', function() {
         const productTitle = document.querySelector('.product-title').textContent;
         const productPrice = parseFloat(document.querySelector('.price').textContent.replace('₹', '').replace(',', ''));
@@ -25,6 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
         // Redirect to the cart page
-        window.location.href = 'cart.html';
+        window.location.href = '/cart.html';
     });
 });

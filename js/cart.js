@@ -1,62 +1,45 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const cartItemsContainer = document.getElementById('cart-items');
+document.addEventListener('DOMContentLoaded', function() {
+    const cartContainer = document.getElementById('cart-items');
     const totalPriceElement = document.getElementById('total-price');
-    const clearCartButton = document.getElementById('clear-cart-button');
 
-    // Function to update the total price
-    const updateTotalPrice = (cartItems) => {
-        const totalPrice = cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
-        totalPriceElement.textContent = totalPrice.toFixed(1);
-    };
+    // Get cart items from localStorage
+    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
-    // Function to remove item from cart
-    const removeFromCart = (productId) => {
-        let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-        cartItems = cartItems.filter(item => item.id !== productId);
-        localStorage.setItem('cartItems', JSON.stringify(cartItems));
-        renderCartItems();
-    };
+    // Display each item in the cart
+    let total = 0;
+    cartItems.forEach((item, index) => {
+        const listItem = document.createElement('li');
+        listItem.classList.add('cart-item');
+        listItem.innerHTML = `
+            <img src="${item.image}" alt="${item.title}">
+            <div class="cart-item-info">
+                <span class="product-name">${item.title}</span>
+                <span>Qty: ${item.quantity}</span>
+                <span class="product-price">₹${item.totalPrice}</span>
+            </div>
+            <button class="remove-item" data-index="${index}">Remove</button>
+        `;
+        cartContainer.appendChild(listItem);
+        total += parseFloat(item.totalPrice);
+    });
 
-    // Function to render cart items
-    const renderCartItems = () => {
-        const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-        cartItemsContainer.innerHTML = '';
+    // Update the total price
+    totalPriceElement.textContent = total.toFixed(2);
 
-        cartItems.forEach(item => {
-            const cartItem = document.createElement('li');
-            cartItem.classList.add('cart-item');
-            cartItem.innerHTML = `
-                <img src="${item.image}" alt="${item.name}">
-                <div class="item-details">
-                    <h4>${item.name}</h4>
-                    <p>$${item.price} x ${item.quantity}</p>
-                    <button class="remove-item" data-id="${item.id}">Remove</button>
-                </div>
-            `;
-            cartItemsContainer.appendChild(cartItem);
-        });
-
-        updateTotalPrice(cartItems);
-
-        // Attach event listeners to remove buttons
-        const removeButtons = document.querySelectorAll('.remove-item');
-        removeButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const productId = button.dataset.id;
-                removeFromCart(productId);
-            });
-        });
-    };
-
-    // Function to clear the cart
-    const clearCart = () => {
+    // Add event listener to "Clear Cart" button
+    document.getElementById('clear-cart-button').addEventListener('click', function() {
         localStorage.removeItem('cartItems');
-        renderCartItems();
-    };
+        cartContainer.innerHTML = '';
+        totalPriceElement.textContent = '0.00';
+    });
 
-    // Attach event listener to clear cart button
-    clearCartButton.addEventListener('click', clearCart);
-
-    // Initial render of cart items
-    renderCartItems();
+    // Add event listener to "Remove" buttons
+    cartContainer.addEventListener('click', function(e) {
+        if (e.target.classList.contains('remove-item')) {
+            const index = e.target.getAttribute('data-index');
+            cartItems.splice(index, 1);
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+            window.location.reload(); // Refresh the page to update the cart
+        }
+    });
 });

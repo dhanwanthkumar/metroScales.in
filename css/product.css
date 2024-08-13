@@ -1,43 +1,138 @@
-.product {
-    margin: 10px;
-    background-color: #ffffff86; /* Use a solid color or a transparent color */
-    border-radius: 10px;
-    max-width: 180px;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
-    z-index: 1; /* Ensure the product content stays above the background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
 }
 
-/* Style the images */
-.product img {
-    border-radius: 10px;
-    margin-top: 10px;
-    width: 100px;
-    height: auto;
-}
-
-/* Style the headings and button */
-h3 {
-    font-size: 14px;
-    color: #333;
+.product-page {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
     margin: 0;
 }
 
-h2 {
+.product-images-carousel {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.product-images-carousel img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product-title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-rating {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.product-rating .stars {
+    color: #FFD700;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.price-details {
     font-size: 16px;
-    color: #000;
-    margin: 10px 0;
+    color: #B12704;
+    margin-bottom: 20px;
+}
+
+.price-details .old-price {
+    text-decoration: line-through;
+    color: #767676;
+    margin-left: 10px;
+}
+
+.discount {
+    font-size: 14px;
+    color: red;
+}
+
+.quantity-select {
+    margin-bottom: 20px;
+}
+
+.quantity-select label {
+    font-size: 14px;
+    color: #333;
+    margin-right: 5px;
+}
+
+.quantity-select select {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 button {
-    background-color: #f44336;
-    color: white;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #FFA41C;
     border: none;
-    padding: 10px 20px;
-    margin-bottom: 5px;
-    border-radius: 20px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 16px;
+    color: white;
+}
+
+button.add-to-cart {
+    background-color: #FF9900;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.product-images-carousel {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.product-images-carousel img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.slick-prev, .slick-next {
+    color: black;
+    font-size: 20px;
+}
+
+.slick-dots li button:before {
+    color: black;
+}
+
+.slick-slide {
+    padding: 10px;
+}
+
+.notification {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    border-radius: 5px;
 }
