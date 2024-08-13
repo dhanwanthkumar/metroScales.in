@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - MyStore</title>
+    <link rel="stylesheet" href="/css/product.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/product.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+</head>
+<body>
+
+    <div class="product-page">
+        <div class="product-images-carousel">
+            <div class="image-slide"><img src="/media/home/black-billing.png" alt="Product Image 1"></div>
+            <div class="image-slide"><img src="/media/home/Red & White Simple Shoe Sale Instagram Post.png" alt="Product Image 2"></div>
+            <div class="image-slide"><img src="/media/home/red-sealing.png" alt="Product Image 3"></div>
+        </div>
+
+        <div class="product-details">
+            <h1 class="product-title">Goat</h1>
+            <div class="product-rating">
+                <span class="rating">4.5</span>
+                <span class="stars">★ ★ ★ ★ ☆</span>
+                <span class="reviews">(2 reviews)</span>
+            </div>
+            <p class="description">
+                <strong>Description:</strong> This is a brief description of the product.
+            </p>
+
+            <div class="price-details">
+                <p class="price">₹24,999 <span class="old-price">₹27,999</span></p>
+                <p class="discount">-11% OFF</p>
+            </div>
+
+            <div class="quantity-select">
+                <label for="quantity">Qty:</label>
+                <select id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+
+            <button class="buy-now">Add to Cart</button>
+        </div>
+
+        <div id="notification" class="notification">Product added to cart!</div> <!-- Notification element -->
+    </div>
+
+
+</body>
+</html>
+
