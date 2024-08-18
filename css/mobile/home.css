@@ -1,0 +1,108 @@
+/**/
+
+/* Mobile View Adjustments */
+
+nav {
+    background-color: #ffffff;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+.nav-categories {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; /* Ensure the categories are evenly spaced */
+}
+
+.nav-categories li {
+    display: inline-block;
+    text-align: center;
+    font-size: small;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-categories li.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.nav-categories li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    display: block;
+}
+
+.nav-categories li span {
+    display: block;
+    margin-top: 2px;
+}
+
+.nav-categories li img {
+    border-radius: 50%;
+    width: 50px;
+    display: block;
+    margin: 10px;
+    margin-top: 0px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.product-slider {
+    gap: 5px;
+    /* Reduce gap between cards on smaller screens */
+}
+
+.product-card {
+    padding: 8px;
+    flex: 1 0 calc(45% - 10px); /* Cards take up nearly half the width */
+    max-width: calc(45% - 10px);
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.5s ease-in-out;
+}
+
+.product-card.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.product-card h3 {
+    font-size: 14px;
+    /* Smaller font for mobile */
+    margin: 8px 0;
+}
+
+.product-card p {
+    margin: 5px;
+}
+
+.product-card .price {
+    font-size: 12px;
+    /* Smaller font for mobile */
+}
+
+.product-card button {
+    margin-top: 5px;
+    font-size: 12px;
+    /* Smaller font for mobile */
+    padding: 8px 12px;
+}
+
+.video-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    background: #00000000;
+    position: relative;
+}
+
+.video-container img {
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 5px;
+}

@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/products.css">
     <link rel="stylesheet" href="css/contact.css">
-    <script src="js/add-to-cart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="js/contact.js"></script>
     <script src="js/nav.js"></script>
 
     <title>Counting Machines</title>
@@ -21,7 +22,7 @@
             <div class="bar"></div>
         </div>
         <ul class="nav-list" id="nav-list">
-            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="weighing.html" class="nav-link">weighing Machines</a></li>
             <li class="nav-item"><a href="sealing.html" class="nav-link">Sealing Machines</a></li>
             <li class="nav-item"><a href="counting.html" class="nav-link">Counting Machines</a></li>
@@ -43,107 +44,146 @@
             <h3>Goat</h3>
             <p class="price">₹24999 <span class="old-price">₹27999</span> <span class="discount">11%
                     OFF</span></p>
-            <a href="products/Product 39.html"><button>Add to Bag</button></a>
+            <a href="products/counting/counting - 1.html"><button>Add to Bag</button></a>
         </div>
         <div class="product-card">
             <img src="/media/home/black-billing.png" alt="Product Image 40">
             <h3>Nano</h3>
             <p class="price">₹1550 <span class="old-price">₹1750</span> <span class="discount">11%
                     OFF</span></p>
-            <a href="products/Product 40.html"><button>Add to Bag</button></a>
+            <a href="products/counting/counting - 2.html"><button>Add to Bag</button></a>
         </div>
         <div class="product-card">
             <img src="/media/home/black-billing.png" alt="Product Image 41">
             <h3>Coin</h3>
             <p class="price">₹16500 <span class="old-price">₹17999</span> <span class="discount">8%
                     OFF</span></p>
-            <a href="products/Product 41.html"><button>Add to Bag</button></a>
+            <a href="products/counting/counting - 3.html"><button>Add to Bag</button></a>
         </div>
         <div class="product-card">
             <img src="/media/home/black-billing.png" alt="Product Image 42">
             <h3>crane</h3>
             <p class="price">₹5500 <span class="old-price">₹6500</span> <span class="discount">15%
                     OFF</span></p>
-            <a href="products/Product 42.html"><button>Add to Bag</button></a>
+            <a href="products/counting/counting - 4.html"><button>Add to Bag</button></a>
         </div>
     </div>
 
 
-    <!-- about us -->
-    <div class="contact-page-container">
-        <!-- contact -->
-        <div class="contact-form-container">
-            <h2>Contact Us</h2>
-            <h1>Get In Touch</h1>
-            <div class="form-get">
-                <form action="/php/process_form.php" method="post">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name...">
+    <div class="CONTACT">
+        <main>
+            <section class="contact-section">
+                <h1>Contact Us</h1>
+                <p>Home / Contact</p>
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="example@yourmail.com">
+                <div class="contact-container">
+                    <div class="contact-form">
+                        <h2>Get In Touch</h2>
+                        <form id="contactForm" method="POST" action="send_email.php">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="example@yourmail.com" required>
+                            <input type="text" name="subject" placeholder="Title" required>
+                            <textarea name="message" placeholder="Type here..." required></textarea>
+                            <button type="submit">Send Now</button>
+                        </form>
+                    </div>
 
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="Title...">
+                    <!-- contac6t info -->
 
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Type Here..." rows="5"></textarea>
+                    <div class="contact-info">
+                        <p>To know more about us kindly ping us through mail and check out our social media frofiles by
+                            clicking the
+                            icons below.</p>
+                        <ul class="contact-details">
+                            <li>
+                                <a href="tel:+9786007674"><i class="fas fa-phone-alt"></i></a>
+                                <div>
+                                    <span>Phone Number:</span>
+                                    <span class="contact-icon">+91 97860 07674</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="mailto:workgit9@gmail.com"><i class="fas fa-envelope"></i></a>
+                                <div>
+                                    <span>Email Address:</span>
+                                    <span class="contact-icon">workgit9@gmail.com</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/9786007674"><i class="fab fa-whatsapp"></i></a>
+                                <div>
+                                    <span>Whatsapp:</span>
+                                    <span class="contact-icon">+91 97860 07674</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <span>Our Office:</span>
+                                    <span class="contact-icon">175, Quaide Millath Rd, Malligaipuram Thottam, Palakarai,
+                                        Palakkarai, Tiruchirappalli, Tamil Nadu 620008</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div id="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.982578326782!2d78.69156018557601!3d10.812644861847993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf506b480a701%3A0x7a8264c7e6e48525!2s175%2C%20Quaide%20Millath%20Rd%2C%20Malligaipuram%20Thottam%2C%20Palakarai%2C%20Palakkarai%2C%20Tiruchirappalli%2C%20Tamil%20Nadu%20620008!5e0!3m2!1sen!2sin!4v1722775730574!5m2!1sen!2sin"
+                                width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                                loading="lazy" aria-hidden="false" tabindex="0">
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div> <!-- Map placeholder -->
+                    </div>
 
-                    <button type="submit">Send Now</button>
-                </form>
+
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <h2>We Are Always Ready To Take A Perfect Shot</h2>
+                <button>Get Started</button>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="media/favicon-white.png" alt="Metroscales Logo">
+                    <p>Follow us on social media to know more about us:</p>
+                    <div class="footer-social">
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/MR.Fazeed?mibextid=LQQJ4d&rdid=SV2V0Dm7WnIqx6Ol&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FqvsFXuQUj3mLZbYk%2F%3Fmibextid%3DLQQJ4d"
+                                target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/metro_scales/" target="_blank" class="social-icon"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@Newmetroscales" target="_blank" class="social-icon"><i
+                                    class="fab fa-youtube"></i></a>
+                            <a href="mailto:workgit9@gmail.com" class="social-icon"><i class="far fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3>Get In Touch</h3>
+                    <ul class="contact-info-bottom">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i> 175, Quaide Millath Rd, Malligaipuram Thottam,
+                            Palakarai, Palakkarai, Tiruchirappalli, Tamil Nadu 620008.
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i> +91 97860 07674.
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i> +91 97860 07674.
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i> workgit9@gmail.com.
+                        </li>
+                    </ul>
+                </div>
             </div>
-
-        </div>
-        <div class="contact-info-container">
-            <p>To know more about us kindly ping us through mail and check out our social media frofiles by clicking the
-                icons below.</p>
-
-            <!-- Location -->
-
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.982578326782!2d78.69156018557601!3d10.812644861847993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf506b480a701%3A0x7a8264c7e6e48525!2s175%2C%20Quaide%20Millath%20Rd%2C%20Malligaipuram%20Thottam%2C%20Palakarai%2C%20Palakkarai%2C%20Tiruchirappalli%2C%20Tamil%20Nadu%20620008!5e0!3m2!1sen!2sin!4v1722775730574!5m2!1sen!2sin"
-                    width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"
-                    aria-hidden="false" tabindex="0">
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-            <div class="contact-info">
-                <div class="info-item">
-                    <a href="tel:+9786007674"><img src="media/icons/phone.png" alt=""></a>
-
-                </div>
-                <div class="info-item">
-                    <a href="mailto:workgit9@gmail.com"><img src="media/icons/gmail.png" alt=""></a>
-
-                </div>
-                <div class="info-item">
-                    <a href="https://wa.me/7904812982"><img src="media/icons/whatsapp.png" alt=""></a>
-
-                </div>
-                <div class="info-item">
-                    <a
-                        href="https://www.facebook.com/MR.Fazeed?mibextid=LQQJ4d&rdid=SV2V0Dm7WnIqx6Ol&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FqvsFXuQUj3mLZbYk%2F%3Fmibextid%3DLQQJ4d"><img
-                            src="media/icons/facebook.png" alt=""></a>
-
-                </div>
-                <div class="info-item">
-                    <a href="https://www.instagram.com/metro_scales/"><img src="media/icons/instagram.png" alt=""></a>
-
-                </div>
-                <div class="info-item">
-                    <a href="https://www.youtube.com/@Newmetroscales"><img src="media/icons/youtube.png" alt=""></a>
-
-                </div>
-            </div>
-        </div>
+            <p>&copy; 2024 Metroscales. All rights reserved.</p>
+        </footer>
     </div>
-
-    <!-- footer -->
-    <footer>
-        <p>&copy; 2024 Metro Scales. All rights reserved.</p>
-    </footer>
-
 
 </body>
 

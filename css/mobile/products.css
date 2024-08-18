@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+.product-page {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.product-images-carousel {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.product-images-carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-details {
+    width: 100%;
+}
+
+.product-title {
+    font-size: 27px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-rating {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.product-rating .stars {
+    color: #FFD700;
+}
+
+.price-details {
+    font-size: 24px;
+    color: #B12704;
+    margin-bottom: 15px;
+}
+
+.price-details .old-price {
+    text-decoration: line-through;
+    color: #767676;
+    margin-left: 5px;
+}
+
+.discount {
+    font-size: 14px;
+    color: red;
+    margin-top: -15px;
+}
+
+.product-heading {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: -6px;
+    color: #333;
+}
+
+.product-highlights h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.highlights-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.highlights-list li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.highlights-list strong {
+    font-weight: bold;
+    display: inline-block;
+    width: 169px;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button.buy-now {
+    width: 100%;
+    padding: 12px;
+    background-color: #FFA41C;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+}
+
+button.buy-now:hover {
+    background-color: #FF9900;
+}

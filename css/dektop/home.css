@@ -1,0 +1,264 @@
+/**/
+
+/* Existing styles */
+
+.quality-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.text h2 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.text p {
+    margin: 5px 0 0;
+    font-size: 13px;
+}
+
+/*  main  */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.guidelines {
+    margin: 0px;
+}
+
+.welcome {
+    background: #d32f2f;
+    margin: 0%;
+    padding: 0px;
+    text-align: center;
+    box-shadow: rgba(6, 101, 13, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    margin-bottom: 1px;
+}
+
+.welcome b {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: small;
+}
+
+.heading-banner img {
+    width: 100%;
+}
+
+.top-bar {
+    margin-top: 7px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 2px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 35px 5px 0px;
+    margin-bottom: 0px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.top-bar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.cart-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #ffffff;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+.nav-categories {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; /* Evenly space the items */
+}
+
+.nav-categories li {
+    display: inline-block;
+    text-align: center;
+    font-size: small;
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.nav-categories li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    display: block;
+}
+
+.nav-categories li img {
+    display: none; /* Hide images */
+}
+
+.nav-categories li span {
+    display: block; /* Ensure the text spans are displayed */
+    margin-top: 2px;
+}
+
+.banner {
+    text-align: center;
+}
+
+.banner img,
+.promotion img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* slide show */
+
+/* Slideshow Container Styles */
+.slideshow-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.slides-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    cursor: grab;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Remove text selection while dragging */
+.slideshow-container,
+.slide img {
+    user-select: none;
+}
+
+.products {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+    gap: 20px;
+}
+
+.product-card {
+    flex: 1 0 calc(33.333% - 10px);
+    max-width: calc(33.333% - 10px);
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.5s ease-in-out;
+}
+
+.product-card.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.product-card .price {
+    font-size: 14px;
+    color: #333;
+}
+
+.product-card .old-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.product-card .discount {
+    color: #e74c3c;
+}
+
+.product-card button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.product-card button:hover {
+    background-color: #555;
+}
+
+.video-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    background: #00000000;
+    position: relative;
+}
+
+.video-container img {
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 5px;
+}
