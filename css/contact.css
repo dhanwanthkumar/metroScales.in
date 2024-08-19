@@ -176,18 +176,18 @@ header .nav-links a.active {
 }
 
 .contact-details li div {
-    text-align: center;
+    text-align: left;
 }
 
 .contact-details li span {
     display: block;
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
 }
 
 .contact-info .contact-icon{
     margin-top: 4px;
-    font-size: 12px;
+    font-size: 13px;
 }
 #map {
     width: 100%; /* Ensure the map fits within the container */
