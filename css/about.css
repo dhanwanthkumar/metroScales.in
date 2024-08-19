@@ -1,0 +1,111 @@
+body {
+    background-color: #111;
+    background:black;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.navbar {
+    position: relative;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 40px; /* Position below the menu icon */
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 200px;
+    z-index: 1000;
+}
+
+.nav-list.active {
+    display: block; /* Show the nav list when menu is active */
+}
+
+.nav-item {
+    text-align: left;
+    padding: 10px;
+}
+
+.nav-item .nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.nav-item .nav-link:hover {
+    color: #ff6f00;
+}
+.video-container img{
+    width: 100%;
+}
+
+.our-story {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 1.5s ease-in-out forwards;
+    /* Add a delay if you want the fade-in to start later */
+    animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Start slightly below its final position */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Move to its final position */
+    }
+}
+
+.our-mission{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 1.5s ease-in-out forwards;
+    /* Add a delay if you want the fade-in to start later */
+    animation-delay: 2.5s;
+}
