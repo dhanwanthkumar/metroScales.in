@@ -1,4 +1,4 @@
-.products{
+.products {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -8,18 +8,57 @@
     gap: 20px;
 }
 
-
 .product-card {
     flex: 1 0 calc(33.333% - 10px);
-    /* Each product card takes up one-third of the container */
     max-width: calc(33.333% - 10px);
-    /* Ensure the width does not exceed one-third of the container */
     background-color: #ffffff;
     padding: 10px;
     border-radius: 8px;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 0.7s ease-in-out forwards;
 }
+
+/* Slide-In Animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Sequential Animation Delay */
+.product-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.product-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.product-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.product-card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.product-card:nth-child(5) {
+    animation-delay: 1.0s;
+}
+
+.product-card:nth-child(6) {
+    animation-delay: 1.0s;
+}
+
+/* Add more nth-child selectors as needed for more cards */
 
 .product-card img {
     width: 100%;
@@ -65,20 +104,16 @@
 @media (max-width: 768px) {
     .product-slider {
         gap: 5px;
-        /* Reduce gap between cards on smaller screens */
     }
 
     .product-card {
         padding: 8px;
         flex: 1 0 calc(45% - 10px);
-        /* Ensure cards are one-third of the width */
         max-width: calc(45% - 10px);
-        /* Ensure cards are one-third of the width */
     }
 
     .product-card h3 {
         font-size: 14px;
-        /* Smaller font for mobile */
         margin: 8px 0;
         margin-bottom: 0px;
     }
@@ -89,13 +124,11 @@
 
     .product-card .price {
         font-size: 12px;
-        /* Smaller font for mobile */
     }
 
     .product-card button {
         margin-top: 5px;
         font-size: 12px;
-        /* Smaller font for mobile */
         padding: 8px 12px;
     }
 }

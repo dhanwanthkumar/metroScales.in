@@ -5,13 +5,11 @@ body {
     padding: 0;
 }
 
-
 .video-container {
     margin: 10px 10px 0px 10px;
     display: flex;
     background: transparent;
     position: relative;
-
 }
 
 .video-container img {
@@ -20,8 +18,7 @@ body {
     border-radius: 5px;
 }
 
-
-/* grid big small*/
+/* grid big small */
 
 .grid-container {
     margin: 10px;
@@ -49,26 +46,48 @@ body {
     gap: 8px;
 }
 
-
-
 .grid-tem-small {
-
     grid-template-rows: 1fr 1fr;
 }
 
-
-/* products*/
+/* products */
 
 .product {
     background-color: #fff;
-    /* Use a solid color or a transparent color */
     border-radius: 10px;
     overflow: hidden;
     position: relative;
     text-align: center;
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
     z-index: 1;
-    /* Ensure the product content stays above the background */
+    opacity: 0;
+    transform: scale(0.5);
+    animation: zoomIn 0.7s ease-in-out forwards;
+}
+
+/* Zoom-In Animation */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Sequential Animation Delay */
+.product:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.product:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.product:nth-child(3) {
+    animation-delay: 0.6s;
 }
 
 /* Style the images */
@@ -120,14 +139,14 @@ button {
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
-.grid-head p{
+
+.grid-head p {
     font-size: 36px;
     margin: 0px;
 }
 
-.grid-head .ooo{
+.grid-head .ooo {
     margin-top: 5px;
     font-size: 20px;
 }
