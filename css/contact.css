@@ -231,16 +231,23 @@ footer {
     background-color: #111;
     color: #fff;
     padding: 40px 20px;
-    text-align: center;
+    text-align: left; /* Ensure the content aligns to the left */
 }
 
 footer .footer-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center; /* Vertically center the logo and contact info */
+    flex-wrap: nowrap; /* Prevent wrapping */
     max-width: 1200px;
     margin: 0 auto;
     gap: 30px;
+}
+
+.footer-contact {
+    flex: 1; /* Allow the contact section to take up the remaining space */
+    max-width: 700px; /* Adjust this width as needed */
+    text-align: left; /* Align text to the left */
 }
 
 .footer-contact h3 {
@@ -278,15 +285,17 @@ footer p {
 
 footer .footer-logo {
     text-align: left;
-    max-width: 150px;
+    max-width: 300px; /* Increase the width to allow more space for the logo and text */
 }
 
 footer .footer-logo img {
     max-width: 100%;
     height: auto;
 }
-.footer-logo p{
+
+.footer-logo p {
     padding-left: 10px;
+    text-align: left;
 }
 
 .footer-social {
@@ -330,8 +339,6 @@ footer .footer-links a {
     text-decoration: none;
 }
 
-
-
 footer .footer-contact p {
     margin: 5px 0;
 }
@@ -341,4 +348,3 @@ footer p {
     font-size: 14px;
     color: #777;
 }
-
