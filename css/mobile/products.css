@@ -76,22 +76,35 @@ body {
     color: #555;
 }
 
+.product-highlights {
+    padding: 10px; /* Add some padding around the section */
+}
+
 .highlights-list {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .highlights-list li {
-    margin-bottom: 10px;
-    font-size: 14px;
-    color: #333;
+    display: flex;
+    justify-content: space-between; /* Space out the title and content */
+    align-items: center;
+    margin-bottom: 10px; /* Add spacing between items */
+    flex-wrap: wrap; /* Ensure text wraps properly */
 }
 
-.highlights-list strong {
-    font-weight: bold;
-    display: inline-block;
-    width: 169px;
+.highlights-list li strong {
+    flex-basis: 40%; /* Allow the title to take 40% of the width */
+    font-size: 16px; /* Adjust font size for better readability */
+    color: #333; /* Ensure color contrasts well */
+}
+
+.highlights-list li span {
+    flex-basis: 55%; /* Allow the content to take 55% of the width */
+    text-align: left; /* Align content to the left */
+    font-size: 14px; /* Adjust font size */
+    color: #666; /* Ensure color contrasts well */
 }
 
 .description {

@@ -83,7 +83,6 @@ header {
 }
 
 .top-bar {
-    margin-top: 7px;
     background-color: white;
     display: flex;
     justify-content: space-between;

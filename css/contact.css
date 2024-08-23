@@ -1,11 +1,3 @@
-/* General Styles */
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    color: #ffffff;
-    background-color: black;
-}
 
 .CONTACT {
     margin: 0;
@@ -182,7 +174,9 @@ header .nav-links a.active {
     margin-bottom: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 40px; /* Increase gap if needed for more spacing */
+    justify-items: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
 }
 
 .contact-details li {
@@ -191,7 +185,9 @@ header .nav-links a.active {
     text-align: center;
     flex-direction: column;
     font-size: 16px;
+    min-width: 200px; /* Ensures minimum width for each item */
 }
+
 
 .contact-details li i {
     font-size: 30px;
@@ -337,7 +333,7 @@ footer .footer-social .social-icon {
     display: inline-block;
     width: 35px;
     height: 35px;
-    background-color: #ff6f00;
+    background-color: #111;
     color: #fff;
     border-radius: 50%;
     text-align: center;
@@ -399,6 +395,43 @@ footer p {
     .footer-social {
         margin-bottom: 20px;
         text-align: center; /* Center-align the content */
+    }
+
+    .contact-details {
+        grid-template-columns: 1fr; /* Stack items vertically */
+        gap: 20px; /* Adjust gap for better spacing */
+        text-align: center; /* Center the text */
+    }
+
+    .contact-details li {
+        width: 100%; /* Ensure each item takes up full width */
+        display: flex;
+        flex-direction: row; /* Align icon and text horizontally */
+        justify-content: flex-start; /* Align items to the start */
+        align-items: center; /* Center items vertically */
+        padding: 10px 0; /* Add some padding for better spacing */
+    }
+
+    .contact-details li i {
+        font-size: 30px;
+        margin-right: 15px; /* Increase space between icon and text */
+        color: #ff6f00; /* Ensure icon color matches the design */
+    }
+
+    .contact-details li div {
+        text-align: left; /* Align text to the left */
+        flex: 1; /* Allow text to take up remaining space */
+    }
+
+    .contact-details li span {
+        display: block;
+        font-size: 16px;
+        color: #fff; /* Ensure text color is readable */
+    }
+
+    .contact-info .contact-icon {
+        font-size: 14px; /* Adjust size for better readability */
+        color: #bbb; /* Slightly lighter color for icons */
     }
 }
 

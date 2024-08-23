@@ -66,16 +66,16 @@ body {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 40px;
+        top: 25px;
         left: 0px;
-        background-color:rgba(255, 255, 255, 0.8);
+        background-color:rgba(255, 255, 255, 0.95);
         width: 100%;
     }
 
     .nav-item {
         margin: 10px 0;
         text-align: left;
-        padding-left: 20px;
+        padding-left: 11px;
     }
 
     .menu-icon {
